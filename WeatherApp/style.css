@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("weatherbg.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.app {
+    min-height: 400px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border: 4px solid #2d2d2d;
+    border-radius: 28px;
+    box-shadow: 3px 3px 1px #2d2d2d;
+    padding: 25px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.inputarea {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 20px 10px;
+}
+
+#inputlocation {
+    font-size: 18px;
+    width: 200px;
+    padding: 12px 15px;
+    border: 3px solid #2d2d2d;
+    border-right: none;
+    border-radius: 12px 0 0 12px;
+    outline: none;
+    background-color: #fff;
+}
+
+#inputlocation:focus {
+    background-color: #eaf1ff;
+}
+
+button {
+    padding: 12px 22px;
+    border: 3px solid #2d2d2d;
+    border-radius: 0 12px 12px 0;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.weather-result {
+    margin: 10px;
+}
+
+.weather-result-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+}
+
+.temperature {
+    font-size: 46px;
+    font-weight: 700;
+    margin: 0;
+    color: #2d2d2d;
+}
+
+.weatherreport {
+    font-size: 20px;
+    color: white;
+    margin: 5px 0 20px 0;
+}
+
+.humidity-box,
+.windspeed-box {
+    position: absolute;
+    text-align: center;
+}
+
+.humidity-box {
+    left: 30px;
+    bottom: 30px;
+}
+
+.windspeed-box {
+    right: 30px;
+    bottom: 30px;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: white;
+    margin: 0 0 2px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin: 0;
+}
